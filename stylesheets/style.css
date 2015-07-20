@@ -1,0 +1,38 @@
+@font-face
+{
+    font-family: coolCustom;
+    src:url(../fonts/Rancho-Regular.ttf);
+}
+
+body
+{
+        font-family:coolCustom;
+        background-image:url(../images/bg.png);
+}
+
+h1
+{
+    font-size:4em;
+    color:white;
+}
+
+.align-centre
+{
+    text-align:center;
+}
+
+i
+{
+    margin:20px;
+}
+
+i.fa-large
+{
+    font-size:6em;
+}
+
+a
+{
+    text-decoration: none;
+    color:white;
+}
