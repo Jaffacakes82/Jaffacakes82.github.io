@@ -14,20 +14,10 @@ $(document).ready(function(){
     $('.sc-link').hover(function (){
         ToggleTadaAnimation($('.sc-link'));
     })
-
-    $('.photo').hover(function (){
-        ToggleBounceAnimation($('.photo'));
-    })
 });
 
 function ToggleTadaAnimation(element)
 {
     element.toggleClass('animated');
     element.toggleClass('tada');
-}
-
-function ToggleBounceAnimation(element)
-{
-    element.toggleClass('animated');
-    element.toggleClass('hinge');
 }
