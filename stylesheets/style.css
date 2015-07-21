@@ -12,10 +12,10 @@
 
 @keyframes headerGlow
 {
-    0%   {text-shadow: green;}
-    25%  {text-shadow: yellow;}
-    50%  {text-shadow: blue;}
-    100% {text-shadow: green;}
+    0%   {text-shadow: 2px 2px green;}
+    25%  {text-shadow: 2px 2px yellow;}
+    50%  {text-shadow: 2px 2px blue;}
+    100% {text-shadow: 2px 2px green;}
 }
 
 h1
