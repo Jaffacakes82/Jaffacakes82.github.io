@@ -10,23 +10,12 @@
     src:url(../fonts/AgentOrange.ttf);
 }
 
-@keyframes headerGlow
-{
-    0%   {text-shadow: 2px 2px green;}
-    25%  {text-shadow: 2px 2px yellow;}
-    50%  {text-shadow: 2px 2px blue;}
-    100% {text-shadow: 2px 2px green;}
-}
-
 h1
 {
     font-size:3em;
     color:black;
     font-family:headers;
     font-weight: bold;
-    animation-name: headerGlow;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
 }
 
 a
@@ -72,8 +61,13 @@ img
 
 section.top
 {
-    padding-top:5%;
+    padding-top:10%;
     width:100%;
+}
+
+section.photo
+{
+    padding-top:10%;
 }
 
 section.list
@@ -91,6 +85,8 @@ section.social
 {
     font-size:4em;
     margin-left:22%;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
 .align-centre
