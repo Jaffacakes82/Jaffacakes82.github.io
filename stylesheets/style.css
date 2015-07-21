@@ -1,19 +1,96 @@
 @font-face
 {
-    font-family: coolCustom;
-    src:url(../fonts/Rancho-Regular.ttf);
+    font-family: body;
+    src:url(../fonts/RockSalt.ttf);
 }
 
-body
+@font-face
 {
-        font-family:coolCustom;
-        background-image:url(../images/bg.png);
+    font-family: headers;
+    src:url(../fonts/AgentOrange.ttf);
+}
+
+@keyframes headerGlow
+{
+    0%   {text-shadow: green;}
+    25%  {text-shadow: yellow;}
+    50%  {text-shadow: blue;}
+    100% {text-shadow: green;}
 }
 
 h1
 {
+    font-size:3em;
+    color:black;
+    font-family:headers;
+    font-weight: bold;
+    animation-name: headerGlow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+a
+{
+    color:black;
+    text-decoration:none;
+    padding:10px;
+}
+
+.ig-link, .li-link, .fb-link, .sc-link
+{
+    transition: all 0.5s ease;
+}
+
+.ig-link:hover
+{
+    color:brown;
+}
+
+.li-link:hover
+{
+    color:#0099CC;
+}
+
+.fb-link:hover
+{
+    color:darkblue;
+}
+
+.sc-link:hover
+{
+    color:orange;
+}
+
+img
+{
+    max-width:100%;
+    max-height:100%;
+    border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
+
+section.top
+{
+    padding-top:5%;
+    width:100%;
+}
+
+section.list
+{
+    font-family:body;
+    margin-left:20%;
+}
+
+section.list ul
+{
+    max-width:75%;
+}
+
+section.social
+{
     font-size:4em;
-    color:white;
+    margin-left:22%;
 }
 
 .align-centre
@@ -21,18 +98,16 @@ h1
     text-align:center;
 }
 
-i
+@media (max-width: 480px)
 {
-    margin:20px;
-}
+    section.social
+    {
+        margin-top:20px;
+        font-size:2em;
+    }
 
-i.fa-large
-{
-    font-size:6em;
-}
-
-a
-{
-    text-decoration: none;
-    color:white;
+    section.list
+    {
+        margin-left:0%;
+    }
 }

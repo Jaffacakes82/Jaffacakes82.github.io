@@ -1,6 +1,23 @@
 $(document).ready(function(){
-    $('#hover-bar').hover(function (){
-        $('#hover-bar').toggleClass('animated');
-        $('#hover-bar').toggleClass('tada');
+    $('.ig-link').hover(function (){
+        ToggleAnimation($('.ig-link'));
+    })
+
+    $('.li-link').hover(function (){
+        ToggleAnimation($('.li-link'));
+    })
+
+    $('.fb-link').hover(function (){
+        ToggleAnimation($('.fb-link'));
+    })
+
+    $('.sc-link').hover(function (){
+        ToggleAnimation($('.sc-link'));
     })
 });
+
+function ToggleAnimation(element)
+{
+    element.toggleClass('animated');
+    element.toggleClass('tada');
+}
