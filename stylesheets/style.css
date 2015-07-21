@@ -85,7 +85,7 @@ section.list
     margin-left:20%;
 }
 
-section.list ul
+section.list ul, p
 {
     max-width:75%;
 }
