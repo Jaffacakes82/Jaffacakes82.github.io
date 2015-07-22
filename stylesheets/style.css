@@ -10,15 +10,6 @@
     src:url(../fonts/GH.otf);
 }
 
-main
-{
-    padding-top:20px;
-    padding-bottom:20px;
-margin-top:10%;
-    border-style:outset;
-    border-radius:10px;
-}
-
 h1
 {
     font-size:3em;
@@ -58,6 +49,11 @@ a
     color:orange;
 }
 
+main
+{
+	margin-top:10%;
+}
+
 img
 {
     max-width:100%;
@@ -92,7 +88,6 @@ section.list ul, p
 section.social
 {
     font-size:3em;
-    margin-left:22%;
     padding-top:20px;
     padding-bottom:20px;
 }
@@ -102,7 +97,7 @@ section.social
     text-align:center;
 }
 
-@media (max-width: 480px)
+@media (max-width: 300px)
 {
     section.social
     {
