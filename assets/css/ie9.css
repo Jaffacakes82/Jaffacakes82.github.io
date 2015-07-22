@@ -1,0 +1,65 @@
+/* Banner + Wrapper (style4) */
+
+	#banner,
+	.wrapper.style4 {
+		background-image: url("../../images/bg1.jpeg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+
+		#banner:before,
+		.wrapper.style4:before {
+			background: #000000;
+			content: '';
+			height: 100%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		#banner .inner,
+		.wrapper.style4 .inner {
+			position: relative;
+			z-index: 1;
+		}
+
+/* Banner */
+
+	#banner {
+		padding: 14em 0 12em 0 ;
+		height: auto;
+	}
+
+		#banner:after {
+			display: none;
+		}
+
+/* Main */
+
+	#main > header {
+		background-image: url("../../images/bg1.jpeg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+
+		#main > header:before {
+			background: #000000;
+			content: '';
+			height: 100%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		#main > header > * {
+			position: relative;
+			z-index: 1;
+		}
