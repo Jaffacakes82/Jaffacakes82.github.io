@@ -7,7 +7,7 @@
 @font-face
 {
     font-family: headers;
-    src:url(../fonts/AgentOrange.ttf);
+    src:url(../fonts/GH.otf);
 }
 
 main
@@ -24,7 +24,6 @@ h1
     font-size:3em;
     color:black;
     font-family:headers;
-    font-weight: bold;
 }
 
 a
@@ -92,7 +91,7 @@ section.list ul, p
 
 section.social
 {
-    font-size:4em;
+    font-size:3em;
     margin-left:22%;
     padding-top:20px;
     padding-bottom:20px;
