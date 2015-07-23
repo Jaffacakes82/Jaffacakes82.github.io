@@ -3154,10 +3154,15 @@
 
 /* Footer */
 
+
+
 	#footer {
-		padding: 6em 0 4em 0 ;
+		padding: 3em 0 2em 0 ;
 		background-color: #1d242a;
 		text-align: center;
+		width: 100vw;
+		position: fixed;
+		bottom: 0px;
 	}
 
 		#footer .icons {
