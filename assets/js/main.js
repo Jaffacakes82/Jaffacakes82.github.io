@@ -1,8 +1,17 @@
 $(document).ready(function() {
 	$('#loading-frame').hide();
+	$('#skip-frame').hide();
 
 	$('#go').click(function(){
 		$('#go').hide();
+		$('#loading-frame').show();
+		grabPlaylist();
+
+		setTimeout(grabPlaylist, 3600000)
+	})
+
+	$('.skip-link').click(function(){
+		$('#skip-frame').hide();
 		$('#loading-frame').show();
 		grabPlaylist();
 
@@ -35,6 +44,7 @@ function grabPlaylist()
 
 				iframeMarkup = iframeMarkup.replace("REPLACE", playlist)
 				$('#spotify-frame').show();
+				$('#skip-frame').show();
 				$('#spotify-frame').html(iframeMarkup);
 				$('#loading-frame').hide();
 			}).fail(function(err) {

@@ -27,6 +27,10 @@ a, a:visited, a:link {
     color: white;
 	opacity:1;
 }
+a.skip-link {
+    text-decoration:underline;
+    cursor:pointer;
+}
 ul {
 	margin-top:10px;
 	text-align: center;
