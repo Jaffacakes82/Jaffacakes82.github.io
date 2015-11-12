@@ -112,16 +112,26 @@ ul li {
 .info-content
 {
     position:absolute;
-    display:none;
-    height: 600px;
+    display:block;
+    height: 0px;
+    max-height:600px;
     width: 480px;
-    background-color: #428BCA;
+    background-color: rgba(33,44,68, 0.9);
     border-radius: 150px;
     margin-top: -300px;
     margin-left: -240px;
     top:50%;
     left:50%;
     z-index:10;
+    -webkit-transition: height 2s ease;
+	-moz-transition: height 2s ease;
+	-o-transition: height 2s ease;
+	transition: height 2s ease;
+}
+
+.animate-in
+{
+    height:600px;
 }
 
 @media (max-width:400px)
