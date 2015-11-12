@@ -61,6 +61,7 @@ ul li {
 }
 .btn-xl:hover
 {
+    background-color:rgba(91,192,222, 0.5);
     -webkit-transition: background-color 200ms linear;
     -moz-transition: background-color 200ms linear;
     -o-transition: background-color 200ms linear;
@@ -87,4 +88,12 @@ ul li {
     text-align:center;
     display: table-cell;
     vertical-align: middle;
+}
+
+@media (max-width:400px)
+{
+    .btn-xl
+    {
+        padding:10px 10px;
+    }
 }
