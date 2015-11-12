@@ -15,10 +15,6 @@ html, body, .container-fluid, .container-table {
 .container-table {
     display: table;
 }
-.vertical-center-row {
-    display: table-cell;
-    vertical-align: middle;
-}
 .loading {
     color: white;
 }
@@ -48,4 +44,22 @@ ul li {
     height: 60px;
     background-color: #343861;
 	opacity:0.3;
+}
+.btn-xl
+{
+  background: rgba(0,0,0,.5);
+  padding: 18px 28px;
+  font-size: 22px;
+  float:left;
+  margin:20px;
+  border: 1px solid rgba(70, 214, 218, .3);
+}
+.icon-container
+{
+  width:50px;
+  height:50px;
+}
+.clear
+{
+  clear:both;
 }
