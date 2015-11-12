@@ -65,3 +65,13 @@ ul li {
 {
   clear:both;
 }
+.button-container
+{
+    display: inline-block;
+}
+.row
+{
+    text-align:center;
+    display: table-cell;
+    vertical-align: middle;
+}
