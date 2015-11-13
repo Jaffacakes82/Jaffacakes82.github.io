@@ -1,19 +1,10 @@
 $(document).ready(function() {
 	$('.tooltips').tooltipster();
 
-	$("#me").click(function (){
-		$(".info-content").addClass('animate-in');
-	})
-
-	$("#skills").click(function (){
-
-	})
-
-	$("#career").click(function (){
-
-	})
-
-	$("#education").click(function (){
-
-	})
+	$("#about-me-info").dialog({
+				autoOpen: false
+	});
+	$("#me").on("click", function() {
+		$("#about-me-info").dialog("open");
+	});
 });
