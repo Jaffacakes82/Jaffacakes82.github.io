@@ -109,6 +109,24 @@ ul li {
   	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
+.ui-widget-header
+{
+  border:none !important;
+  background: black !important;
+  opacity: 0.3;
+}
+
+.ui-state-hover, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #ccc;
+    background: white;
+    font-weight: bold;
+    color: #1c94c4;
+}
+
+.ui-icon
+{
+  background-image:url("images/ui-icons_222222_256x240.png") !important;
+}
 
 @media (max-width:400px)
 {

@@ -4,6 +4,7 @@ $(document).ready(function() {
 	$("#about-me-info").dialog({
 				autoOpen: false
 	});
+
 	$("#me").on("click", function() {
 		$("#about-me-info").dialog("open");
 	});
