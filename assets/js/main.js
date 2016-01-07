@@ -1,11 +1,19 @@
 $(document).ready(function() {
 	$('.tooltips').tooltipster();
 
-	$("#about-me-info").dialog({
-				autoOpen: false
+	$("#me").on("click", function() {
+		bootbox.alert("Hello World!");
 	});
 
-	$("#me").on("click", function() {
-		$("#about-me-info").dialog("open");
+	$("#skills").on("click", function() {
+		bootbox.alert("Hello World!");
+	});
+
+	$("#career").on("click", function() {
+		bootbox.alert("Hello World!");
+	});
+
+	$("#education").on("click", function() {
+		bootbox.alert("Hello World!");
 	});
 });
