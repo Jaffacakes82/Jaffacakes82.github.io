@@ -28,13 +28,13 @@ a.skip-link {
     text-decoration:underline;
     cursor:pointer;
 }
-ul {
+ul.footer-list {
 	margin-top:10px;
 	text-align: center;
-    list-style-type: none;
+  list-style-type: none;
 	padding-left:0px;
 }
-ul li {
+ul.footer-list li {
     display: inline;
     padding: 10px;
 }
@@ -126,6 +126,11 @@ ul li {
 .ui-icon
 {
   background-image:url("images/ui-icons_222222_256x240.png") !important;
+}
+
+.modal-title, .modal-body
+{
+  color:black;
 }
 
 @media (max-width:400px)
