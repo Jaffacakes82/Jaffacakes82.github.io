@@ -1,14 +1,96 @@
+@keyframes imageAnimation {
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
 body {
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg1.jpeg");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg1.jpeg");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg1.jpeg");
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg1.jpeg");
+	color:white;
+    background-color:black;
+}
+
+.bg-slideshow
+{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:0;
+    list-style:none;
+}
+
+.bg-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite 0s;
+}
+
+.bg-slideshow li:nth-child(1) span {
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg1.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg1.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg1.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg1.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-	color:white;
 }
+.bg-slideshow li:nth-child(2) span {
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg2.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg2.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg2.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg2.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-delay: 10s;
+}
+.bg-slideshow li:nth-child(3) span {
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg3.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg3.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg3.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg3.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-delay: 20s;
+}
+.bg-slideshow li:nth-child(4) span {
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg4.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg4.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg4.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg4.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-delay: 30s;
+}
+.bg-slideshow li:nth-child(5) span {
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg5.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg5.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg5.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/bg5.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-delay: 40s;
+}
+
 html, body, .container-fluid, .container-table {
     height: 100%;
 }
@@ -90,25 +172,6 @@ ul.footer-list li {
     display: table-cell;
     vertical-align: middle;
 }
-.pic-container
-{
-    width: 300px;
-	  height: 300px;
-    display:none;
-    margin: 0 auto;
-}
-.prof-pic
-{
-    max-width:100%;
-    height:100%;
-    border-radius: 150px;
-  	-webkit-border-radius: 150px;
-  	-moz-border-radius: 150px;
-  	background: url('../../images/Joe2.jpg') no-repeat;
-  	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
 .ui-widget-header
 {
   border:none !important;
@@ -126,6 +189,11 @@ ul.footer-list li {
 .ui-icon
 {
   background-image:url("images/ui-icons_222222_256x240.png") !important;
+}
+
+.modal-dialog
+{
+    opacity:0.9;
 }
 
 .modal-title
