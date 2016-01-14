@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$("#me").on("click", function() {
 		bootbox.dialog({
 		  title: "About Me",
-		  message: 'With two years of experience in the management, development and successful delivery of specialist software solutions, I am an enthusiastic and ambitious full stack developer with a passion for technology, innovation and delivering success.'
+		  message: '<p class="centre-modal-text"><b>I\'m Joseph Ellis, a 24 year old full stack developer from London.</b></p><br/>Two years of experience in the management, development and successful delivery of specialist software solutions, I am an enthusiastic and ambitious individual with a passion for technology, innovation and delivering success.'
 		});
 	});
 
@@ -25,7 +25,7 @@ $(document).ready(function() {
 	$("#education").on("click", function() {
 		bootbox.dialog({
 		  title: "Education",
-		  message: 'Is key.'
+		  message: '<ul><li>BSc Computer System Integration, 1st class honours – University of the West of England.</li><li>A-Level Physics – Christ the King Sixth Form College.</li><li>A-Level Computing – Christ the King Sixth Form College.</li><li>A-Level English language & literature – Christ the King Sixth Form College.</li><li>13 A* - C grade GCSEs – Bonus Pastor Catholic College.</li></ul>'
 		});
 	});
 });
