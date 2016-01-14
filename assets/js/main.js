@@ -17,8 +17,8 @@ $(document).ready(function() {
 
 	$("#career").on("click", function() {
 		bootbox.dialog({
-		  title: "Career journey",
-		  message: 'On the path to success.'
+		  title: "Career Journey",
+		  message: '<u>Avco Systems Ltd</u> - <b>Analyst Programmer</b><br /><b>Projects:</b><br/><ul><li>Led a project to develop a system that sells and displays vehicle provenance checks, with a focus on device compatibility, for a partnership of the UK\'s largest digital automotive marketplace and a FTSE100 global information services company.<ul><li><b>Technologies: MVC, MySQL, CSS, JavaScript, HTML.</b></li></ul></li><br /><li>Led a project to develop a system that enables vehicle history information to be displayed as part of a full-page car advert, for a FTSE 100 global information services company. Currently in use on the UK-used approved website for one of the top German automotive manufacturers.<ul><li><b>Technologies: MVC, MongoDB, CSS, HTML.</b></li></ul><br /><li>Part of the development team that delivered an end to end examination and certification portal for a large UK vocational education organisation.<ul><li><b>Technologies: MVC, Transact-SQL, CSS, HTML.</b></li></ul></li></ul><br /><br /><u>Avco Systems Ltd</u> - <b>Industrial Placement</b><br />As part of my degree I undertook a placement year with Avco Systems. Throughout the year I worked on a number of agile software projects with different development teams enhancing my technical knowledge in a professional environment. Key responsibilities included test driven software development, customer requirements capture, cost analysis and support and project documentation creation.<br/><br/><u>City &amp; Guilds</u> - <b> Regional Customer Advisor</b><br/>Provided customer support to all of our centres in the southern part of England via phone and e-mail. The role also included administration surrounding various application forms, raising invoices and managing expense claims for external consultants.'
 		});
 	});
 

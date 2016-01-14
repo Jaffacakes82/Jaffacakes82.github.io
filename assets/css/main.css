@@ -128,6 +128,11 @@ ul.footer-list li {
   background-image:url("images/ui-icons_222222_256x240.png") !important;
 }
 
+.modal-title
+{
+  text-align:center;
+}
+
 .modal-title, .modal-body
 {
   color:black;
