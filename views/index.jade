@@ -1,0 +1,71 @@
+extends layout
+
+block content
+    ul.bg-slideshow
+        li
+            span
+        li
+            span
+        li
+            span
+        li
+            span
+        li
+            span
+
+    .container-fluid
+        .row
+            .col-md-6.col-md-offset-3
+                .narrow-column
+                    .button-container
+                        #me.tooltips.btn.btn-xl.btn-lg(title='Me')
+                            .icon-container
+                                i.fa.fa-user.fa-5
+                        #skills.tooltips.btn.btn-xl.btn-lg(title='Skills')
+                            .icon-container
+                                i.fa.fa-wrench.fa-5
+                    .button-container
+                        #career.tooltips.btn.btn-xl.btn-lg(title='Career')
+                            .icon-container
+                                i.fa.fa-briefcase.fa-5
+                        #education.tooltips.btn.btn-xl.btn-lg(title='Education')
+                            .icon-container
+                                i.fa.fa-graduation-cap.fa-5
+        .row
+            .col-md-6.col-md-offset-3
+                .narrow-column
+                    form(method='POST' action='/')
+                        .form-group
+                            .input-group
+                                input.form-control.input-lg(type='text', name='originalUrl', placeholder='Shorten URL...', required='required')
+                                span.input-group-btn
+                                    button.btn-lg.btn.btn-primary(type='submit')
+                                        i.fa.fa-arrow-circle-right
+                    span #{value}
+
+
+footer.footer
+block foot
+    footer.footer
+        .container
+            ul.footer-list
+                li
+                    a.fa.fa-envelope.fa-2x(data-anijs='if: mouseover, do: pulse animated', href='mailto:joe@josephellis.co.uk')
+                        span.label
+                li
+                    a.fa.fa-linkedin.fa-2x(data-anijs='if: mouseover, do: pulse animated', href='https://linkedin.com/in/mrjellis')
+                        span.label
+                li
+                    a.fa.fa-instagram.fa-2x(data-anijs='if: mouseover, do: pulse animated', href='https://instagram.com/joe.hdr')
+                        span.label
+                li
+                    a.fa.fa-github.fa-2x(data-anijs='if: mouseover, do: pulse animated', href='https://github.com/Jaffacakes82')
+                        span.label
+
+block scripts
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/main.js')
+    script(src='/javascripts/anijs-min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    script(src='/javascripts/jquery.tooltipster.min.js')
+    script(src='/javascripts/bootbox.min.js')
