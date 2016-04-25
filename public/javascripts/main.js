@@ -37,6 +37,29 @@ $(document).ready(function () {
             onEscape: true
         });
     });
+
+    $("#http-action").click(function () {
+        $("#chosen-protocol").val('http://');
+        $(".btn-https").hide();
+        $(".btn-http").show();
+    });
+
+    $("#https-action").click(function () {
+        $("#chosen-protocol").val('https://');
+        $(".btn-https").show();
+        $(".btn-http").hide();
+    });
+
+    var isSuccess = $("#successful-shorten").val();
+    var successMessage = $("#url-value").val();
+
+    if (isSuccess === "true") {
+        var alertHtml = "<div class='alert alert-success' role='alert'><strong>Yay!</strong> <a target='_blank' href=" + successMessage + ">" + successMessage + "</a></div>";
+        $("form").append(alertHtml);
+    } else if (isSuccess === "false") {
+        var alertHtml = "<div class='alert alert-danger' role='alert'><strong>Uh oh!</strong> " + successMessage + "</div>"
+        $("form").append(alertHtml);
+    }
 });
 
 function isURL(str) {

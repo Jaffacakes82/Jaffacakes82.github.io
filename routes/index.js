@@ -13,38 +13,45 @@ router.get('/', function (req, res) {
 });
 
 router.post('/', function (req, res) {
-    var originalUrl = req.body.originalUrl,
+    var originalUrl = req.body.chosenProtocol + req.body.originalUrl,
         returnVal = {
             success: false,
             value: 'Sorry, that didn\'t work! Did you enter a valid URL?',
             title: 'URL Shortener'
         };
 
-    console.warn(req.body);
 
-    var apiUrl = 'https://api-ssl.bitly.com/v3/shorten?access_token=' + apiKey + '&longUrl=' + originalUrl,
-        requestOptions = {
-            uri: apiUrl,
-            method: 'GET'
-        };
+    if (req.body.originalUrl != '') {
 
-    console.warn(requestOptions)
 
-    request(requestOptions, function (err, httpResponse, body) {
-        if (err) {
-            console.warn('API call failed.')
-            console.warn(err);
+        var apiUrl = 'https://api-ssl.bitly.com/v3/shorten?access_token=' + apiKey + '&longUrl=' + originalUrl,
+            requestOptions = {
+                uri: apiUrl,
+                method: 'GET'
+            };
+
+        request(requestOptions, function (err, httpResponse, body) {
+            if (err) {
+                console.warn('API call failed.')
+                console.warn(err);
+                res.render('index', returnVal);
+                res.end();
+            }
+
+            returnVal.success = true;
+
+            var responseObject = JSON.parse(body);
+
+            returnVal.value = responseObject.data.url;
+
             res.render('index', returnVal);
-            res.end();
-        }
-
-        console.warn(body);
-
-        returnVal.success = true;
-        returnVal.value = body.id;
-
+        })
+    } else {
+        console.log('No URI provided');
+        returnVal.value = 'Stop trying to do the impossible...'
         res.render('index', returnVal);
-    })
+        res.end();
+    }
 });
 
 module.exports = router;
