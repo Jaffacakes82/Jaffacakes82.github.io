@@ -37,6 +37,13 @@ block content
                     form(method='POST' action='/')
                         .form-group
                             .input-group
+                                label.radio-inline(for='http')
+                                    input(type='radio', name='protocol-selection', id='http', checked='checked')
+                                    i.fa.fa-unlock
+                                label.radio-inline(for='https')
+                                    input(type='radio', name='protocol-selection', id='https')
+                                    i.fa.fa-lock
+                            .input-group.no-padding
                                 input.form-control.input-lg(type='text', name='originalUrl', placeholder='Shorten URL...', required='required')
                                 span.input-group-btn
                                     button.btn-lg.btn.btn-primary(type='submit')

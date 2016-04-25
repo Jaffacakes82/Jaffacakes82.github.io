@@ -3,7 +3,7 @@ var express = require('express');
 var request = require('request');
 var router = express.Router();
 
-var apiKey = "AIzaSyC6OiX-bH7swGUX-gm1KzxTotrwe1p6hz8";
+var apiKey = "831180a8956f960b65e1cdfd1437b0c35a98439e";
 
 /* GET home page. */
 router.get('/', function (req, res) {
@@ -22,17 +22,13 @@ router.post('/', function (req, res) {
 
     console.warn(req.body);
 
-    var apiUrl = 'https://www.googleapis.com/urlshortener/v1/url?key=' + apiKey,
+    var apiUrl = 'https://api-ssl.bitly.com/v3/shorten?access_token=' + apiKey + '&longUrl=' + originalUrl,
         requestOptions = {
-            headers: {
-                'content-type': 'application/json'
-            },
             uri: apiUrl,
-            method: 'POST',
-            json: {
-                'longUrl': originalUrl
-            }
+            method: 'GET'
         };
+
+    console.warn(requestOptions)
 
     request(requestOptions, function (err, httpResponse, body) {
         if (err) {
