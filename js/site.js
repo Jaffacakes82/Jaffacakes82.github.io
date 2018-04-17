@@ -6,7 +6,7 @@ $(document).ready(function () {
             $(".hawking").removeClass('wobble');
         }, 1500);
 
-        $.get('http://hawkingquotesapi.azurewebsites.net/api/quote', function (data) {
+        $.get('https://hawkingquotesapi.azurewebsites.net/api/quote', function (data) {
             $(".speech-bubble > p").text('"' + data + '"');
         })
 
